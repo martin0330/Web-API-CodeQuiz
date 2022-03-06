@@ -7,10 +7,39 @@
 
 
 var timeLeft = 60;
+var timeMinus = 5;
 var score = 0;
 var startQuizButton = document.getElementById("start-quiz-button");
 var timeScoreContainer = document.getElementById("time-score-container");
 var startQuizContainer = document.getElementById("start-quiz-container");
+
+var questions = [
+    {
+        title: "Which built-in method combines the text of two strings and returns a new string?",
+        choices: ["Append()", "Concat()", "Attach()", "None"],
+        answer: "Concat()"
+    },
+    {
+        title: "Inside which HTML element do we put the JavaScript?",
+        choices: ["<script>", "<js>", "<JavaScript>", "none"],
+        answer: "<script>"
+    },
+    {
+        title: "The external JavaScript file must contain the <script> tag.",
+        choices: ["True", "False"],
+        answer: "False"
+    },
+    {
+        title: "JavaScript is the same as Java",
+        choices: ["True", "False"],
+        answer: "False"
+    },
+    {
+        title: "How can you add a comment in a JavaScript?",
+        choices: ["'This is a comment'", "<!This is a comment>!", "#This is a comment", "//This is a comment"],
+        answer: "//This is a comment"
+    },
+]
 
 
 function startTimer() {
@@ -37,6 +66,10 @@ function startQuiz() {
     timeScoreContainer.classList.remove("hide");
     startTimer()
 
+}
+
+var getQuestions = function() {
+    
 }
 
 
